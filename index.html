@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RocketNFTs</title>
+
+    <!-- CSS -->
+    <style>
+      span {
+    color: red;
+}
+body {
+    background-color: rgb(14, 14, 14);
+    color: white;   
+}
+p{ font-family: sans-serif;}
+
+.main1 {
+    background-image: url(https://gist.githubusercontent.com/micaeldfs/6e3d00a029eb7c6d6038ecb800816366/raw/83e1d306040daea6f8fed83a1d379f9e9e0f1f7a/bgprojectsab.svg);
+    background-size: cover; /* ou outro valor como 'contain' */
+    background-repeat: no-repeat;
+    background-position: center center; /* ou ajuste conforme necessário */
+    
+}
+
+#header {
+    display: flex;  
+    justify-content: space-around; 
+    padding: 1% 0% 1% 0%;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+
+#header-itens li {
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+}
+
+#header-itens a {
+    text-decoration: none;
+    color: white;
+}
+
+#header-button {
+    display: flex;
+    align-items: center; /* Centralizar verticalmente */
+  }
+  
+#button {
+    display: flex;
+    align-items: center; /* Centralizar verticalmente */
+    border: none;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+  
+#button img {
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+#button p {
+    font-weight: bold;
+}
+
+#main-content1 {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 1% 0% 1% 0%;
+    align-items: center;
+}
+
+#main-description1 {
+    color: white;
+}
+
+#description {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#avatars {
+    display: flex;
+    align-items: center; /* Centralizar verticalmente */
+    border: none;
+    font-size: 16px;
+}
+
+#texts {
+    display: grid;
+    grid-template-rows: 20px 20px
+}
+
+#main1-text1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#main1-text2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-description2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#main-imagens{
+    display: flex;
+    align-items: center;
+}
+
+#row1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+#row2 {
+    display: flex;
+    justify-content: space-around;
+}
+.main-2 {
+    display: flex;
+    width: 100;
+    height: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+/* menu esquerdo */
+.test1 {
+    width: 15vw;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid #ccc;    
+}
+
+
+#description2 {
+    display: flex;
+    height: 10vh;
+}
+
+
+#description2 {
+    margin: 40px 0px 50px 0px;
+    font-family: sans-serif;
+    text-align: justify; 
+    justify-content: space-around;
+}
+#description2 p {
+    width: 25vw;
+    justify-content: space-between;
+}
+#description2 p span{
+    text-decoration: underline;
+}
+#number-text {
+    margin-top: 5vw;
+}
+
+#text-1 p {
+    margin: 30px 0px 40px 0px;
+}
+#text-2 p {
+    margin: 30px 0px 40px 0px;
+}
+.subli {
+    text-decoration: underline;
+
+}
+
+.number-text1 {
+    font-family: 'montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+.number-text1 p {
+    margin-bottom: 0;
+}
+
+.number-text2 {
+    font-family: 'monserrat', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 15px;
+
+}
+#image-banner {
+    margin-top: 5vw;
+}
+
+
+.main3{
+    margin-top: 5vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+
+#first-text p {
+    font-size: 30px;
+    font-weight: 900;
+}
+#first-text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 5vw;
+}
+
+#linha-vertical {
+    border: 1px solid #ccc;
+}
+
+#img-astro1 {
+    margin-bottom: 3vw;
+}
+
+#img-astro2 {
+    margin-bottom: 3vw;
+}
+
+.title-astronauta {
+    font-size: 30px;
+}
+
+.astronautas1-3 span{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+#subtitle-astro1 {
+    font-family: 'monserrat', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+      
+    </style>
+    
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="main1">
+
+        <header id="header">
+          <div id="header-logo">
+            <img src="https://drive.google.com/uc?export=view&amp;id=1URylZRnrjUtiDPg1zfgYEozXhFe3DBQR" alt="RocketNFTs">
+          </div>
+
+          <div id="header-itens">
+            <ul>
+              <li>
+                <a href="">Comprar NFT</a>
+              </li>
+              <li>
+                <a href="">Sobre</a>
+              </li>
+              <li>
+                <a href="">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="header-button">
+            <button id="button">
+              <img src="https://drive.google.com/uc?export=view&amp;id=1CiyDHvk_HND9Q8s1s9OG07SwFUI93QSZ" alt="MetaMask">
+              <p>Conectar carteira</p>
+            </button> 
+          </div>
+        </header>
+
+        <div id="main-content1" >
+          <div id="main-description1">
+            <div id="description">
+              <p>
+                Mercado digital para colecionáveis em </br> 
+                criptos e tokens não fungível (NFT). </br> 
+                Compre, venda e descubra ativos digitais </br>
+                exclusivos para você.
+              </p>
+            </div>
+
+            <div id="avatars" >
+              <img src="https://drive.google.com/uc?export=view&amp;id=1F4vka3RLvSgcAmEoUvFFP6BMVv7cDzJJ" alt="">
+
+              <div id="texts">
+                <p id="main1-text1">
+                  +10
+                </p>
+
+                <p id="main1-text2">
+                  Artistas selecionados
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="main-description2">
+            <p>
+              Descubra a verdadeira</br>
+              arte digital e</br>
+              colecione diversas</br>
+              <span>
+                NFTs
+              </span>
+            </p>
+          </div>
+
+          <div id="main-description3" >
+            <img src="https://drive.google.com/uc?export=view&amp;id=1KZ_KTOk1TuBfCq-a-18skYiyrS7p9U8e" alt="">
+          </div>
+        </div>
+
+        <div id="main-images">
+          <div id="row1" >
+            <img src="https://drive.google.com/uc?export=view&amp;id=1TtOZt9B_og4SUNalkhrP5VEmZJ9dRJte" alt="">
+            <img src="https://drive.google.com/uc?export=view&amp;id=1r9cmxChdPIwUg5Q8K17A_zEagTrw7fY_" alt="">
+            <img src="https://drive.google.com/uc?export=view&amp;id=18TFFKTSmOlcphRGbDObPrn8kM3kxQXcn" alt="">
+            <img src="https://drive.google.com/uc?export=view&amp;id=1uNhN9qRp4hjDsjb_aTH6nwVW5KqONp7m" alt="">
+          </div>
+
+          <div id="row2">
+            <img src="https://drive.google.com/uc?export=view&amp;id=1eo92YdYsVhGVaCc2a99wXHVYJsla1nm4" alt="">
+            <img src="https://drive.google.com/uc?export=view&amp;id=1Vq7_EIzZmi4WEpsU-y_PuBaV1bjO5UjB" alt="">
+            <img src="https://drive.google.com/uc?export=view&amp;id=1NWog70cMg7nkh4DwJTGuXxbV0kbG5aRR" alt="">
+            <img src="https://drive.google.com/uc?export=view&amp;id=1L_EuiztUaQf6sjYGdXKTN74hIC_NjjOr" alt="">
+          </div>
+        </div>
+
+      </div>
+
+        
+      <div class="main-2">  
+
+        <aside class="test1"> 
+
+        <div id="number-text"> 
+
+          <div>
+            <div class="number-text1">
+              <p>10K+</p>
+            </div>
+    
+            <div class="number-text2">
+              Artes
+            </div>
+          </div>
+
+          <div>
+            <div class="number-text1">
+              <p>200+</p>
+            </div>
+    
+            <div class="number-text2">
+              Vendas
+            </div>
+          </div>
+          
+          <div>
+            <div class="number-text1">
+              <p>20</p>
+            </div>
+    
+            <div class="number-text2">
+              Artistas
+            </div>
+          </div>
+          
+        
+        </div>
+      </aside>
+         
+        <div id="main-2-content"> 
+          <div id="description2"> 
+            <div id="text-1">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada amet pretium lacus. Id <span>potenti diam</span>  et cras odio viverra. Amet, velit ut hac sit. Enim ultricies mauris mattis nunc semper.
+              </p>
+              
+              <p class="subli">Lorem ipsum</p>
+              
+            </div>
+  
+            <div id="text-2">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada amet pretium lacus. Id <span>potenti diam</span>  et cras odio viverra. Amet, velit ut hac sit. Enim ultricies mauris mattis nunc semper.
+              </p>
+  
+              <p class="subli">Lorem ipsum</p>
+            </div>
+          </div>
+  
+          <div id="image-banner">
+            <img src="https://drive.google.com/uc?export=view&amp;id=15EYkcWPQ8TEmJGIJueXhkwxzd48EURm9" alt="banner">
+          </div>
+        </div>
+      </div>
+
+      <div class="main3">
+
+        <div id="first-text">
+          <p> <span>Populares</span> da semana</p>
+        </div>
+
+
+        <div class="astronautas1-3"> 
+          
+          <div id="astronauta1">
+
+            <div class="title-astronauta">
+              <p> Astronauta 1</p>
+            </div>
+  
+            <div id="img-arrow1">
+              <img src="https://drive.google.com/uc?export=view&amp;id=1pRyQWG8U39tK3urVwMmcpHQluPS3uaj6" alt="astronautas">
+            </div>
+  
+            <div id="subtitle-astro1">
+              <p>Mayk Brito</p>
+            </div>
+            
+            <div id="rkt1">
+              <p><span>1.50 RKT</span></p>
+            </div>
+  
+            <div id="img-astro1">
+              <img src="https://drive.google.com/uc?export=view&amp;id=1QcB_dlkn9XYRNEPObZaQpNd06x24m46C" alt="austronauta">
+            </div>
+          </div>
+
+          <div id="astronauta3">
+
+            <div class="title-astronauta">
+              <p> Austronauta 3</p>
+            </div>
+
+            <div id="img-arrow3">
+              <img src="https://drive.google.com/uc?export=view&amp;id=1pRyQWG8U39tK3urVwMmcpHQluPS3uaj6" alt="astronauta"> 
+            </div>
+  
+            <div id="subtitle-astro3">
+              <p>João Inácio (Biro)</p>
+            </div>
+            
+            <div id="rkt3">
+              <p><span>3.75 RKT</span></p>
+            </div>
+  
+            <div id="img-astro3">
+              <img src="https://drive.google.com/uc?export=view&amp;id=1EbReY1PdiuA8Ksxa_VkdSCHBsfgRcxdc" alt="astronauta">
+            </div>
+          </div>
+
+          </div>
+
+          <div id="linha-vertical">
+          </div>
+          
+          <div class="astronautas2-4">  <!--right-->
+
+            <div id="astronauta2">
+
+              <div class="title-astronauta">
+                <p> Austronauta 2</p>
+              </div>
+    
+              <div id="img-arrow2">
+                <img src="https://drive.google.com/uc?export=view&amp;id=1pRyQWG8U39tK3urVwMmcpHQluPS3uaj6" alt="astronauta">
+              </div>
+    
+              <div id="subtitle-astro2">
+                <p>Jakeliny Gracielly</p>
+              </div>
+              
+              <div id="rkt2">
+                <p><span>2.0  RKT</span></p>
+              </div>
+    
+              <div id="img-astro2">
+                <img src="https://drive.google.com/uc?export=view&amp;id=1cKkuo5ookNo43umYDeILziRu4vBSJyhn" alt="astronauta">
+              </div>
+            </div>
+
+            <div id="astronauta4">
+
+              <div class="title-astronauta ">
+                <p> Astronauta 4</p>
+              </div>
+    
+              <div id="img-arrow4">
+                <img src="https://drive.google.com/uc?export=view&amp;id=1pRyQWG8U39tK3urVwMmcpHQluPS3uaj6" alt="astronauta">
+              </div>
+    
+              <div id="subtitle-astro4">
+                <p>Tamires Santos</p>
+              </div>
+              
+              <div id="rkt4">
+                <p><span>4.30 RKT</span></p>
+              </div>
+    
+              <div id="img-astro4">
+                <img src="https://drive.google.com/uc?export=view&amp;id=1UzOwmjjnQa3OCalMsW3fD-fseZJhlhuF" alt="astronauta">
+              </div>
+            </div>
+  
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
